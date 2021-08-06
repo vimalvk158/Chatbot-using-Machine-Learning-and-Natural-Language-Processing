@@ -1,0 +1,123 @@
+{"intents": [
+        {"tag": "starting matlab",
+         "patterns": ["How to Start MATLAB?", "steps for Starting MATLAB?", "Process for starting MATLAB?"],
+         "responses": ["To start MATLAB, double-click the MATLAB shortcut icon on your Windows desktop. You will know MALTAB is running when you see the special prompt in the MATLAB Command Window."],
+         "context": [""]
+         },
+         {"tag": "quiting MATLAB",
+         "patterns": ["How to quit MATLAB?","steps for quiting MATLAB?","Process for quiting MATLAB?","How to end MATLAB?","steps for ending MATLAB?","Process for ending MATLAB?"],
+         "responses": ["To end your MATLAB session, select Exit MATLAB from the File menu in the desktop, or type quit (or exit) in the Command Window, or with easy way by click on close button in control box."],
+         "context": [""]
+        },
+        {"tag": "desktop Tools-Command Window",
+         "patterns": ["For what Command window is used?","Command prompt is used for?","why cmd prompts used?"],
+         "responses": ["Command Window is used to enter variables and run functions and M-files."],
+         "context": [""]
+        },
+        {"tag": "current Directory Browser",
+         "patterns": ["what is Current Directory Browser","Define Current Directory Browser?","Explain about Current Directory Browser?"],
+         "responses": ["MATLAB file operations use the current directory reference point. Any file you want to run must be in the current directory or on the search path."],
+         "context": [""]
+        },
+        {"tag": "mATLAB Workspace",
+         "patterns": ["what is MATLAB Workspace","Define MATLAB Workspace?","short note on MATLAB Workspace?"],
+         "responses": ["The MATLAB workspace consists of the set of variables (named arrays) built up during a MATLAB session and stored in memory."],
+         "context": [""]
+        },
+        {"tag": "clear Commands",
+         "patterns": ["What is clear Command?","Define clear Command?","Say about clear Command?"],
+         "responses": ["Removes all variables from workspace"],
+         "context": [""]
+        },
+        {"tag": "clc Command",
+         "patterns": ["What is clc Command?","Define clc Command?","Say about clc Command?"],
+         "responses": ["Clears the Command window and homes the cursor."],
+         "context": [""]
+        },
+        {"tag": "help Command",
+         "patterns": ["What is the help Command?","Define help Command?","Say about help Command?"],
+         "responses": ["help <Topic> displays help about that Topic if it exist."],
+         "context": [""]
+        },
+        {"tag": "Creating and managing virtual machine",
+         "patterns": ["How to Create virtual machine?", "How to manage virtual machine?", "How to manage VM?","How to create VM?","steps for Creating virtual machine?","steps for managing  virtual machine?"],
+         "responses": ["service opennebula start service opennebula-sunstone start ,cat /etc/libvirt/qemu.conf ,Open the browser and use the following URL http://localhost:9869/ ,User Name: oneadmin,Password : password "],
+         "context": [""]
+        },
+        {"tag": "Creating Image using Upload option",
+         "patterns": ["How to create Image  using Upload option?"],
+         "responses": ["Go to dash board ->storage->Image,Upload any Iso Image operating system "],
+         "context": [""]
+        },
+        {"tag": "Creating VM Template: ",
+         "patterns": ["How to create VM Template?"],
+         "responses": ["Go to dash board->Template->VMs "],
+         "context": [""]
+        },
+        {"tag": "Creating Virtual Machine Instance",
+         "patterns": ["ow to create Virtual Machine Instance?"],
+         "responses": ["Go to Dash board->instances->VMs "],
+         "context": [""]
+        },
+        {"tag": "Checking Number of Virtual Machines at a Time",
+         "patterns": ["How to check Number of Virtual Machines at a Time?","How to check Number of VM's at a Time?"],
+         "responses": ["The Number of virtual machines capacity will be differs by the Following Criteria: 1. Capacity of the host operating system 2. Memory, CPU and storage capacity of the virtual machines"],
+         "context": [""]
+        },
+        {"tag": "Installing C compiler",
+         "patterns": ["How to Install C compiler and run a C program in virtual machine?","Tell me the steps for Install C compiler and run a C program in virtual machine?"],
+         "responses": ["Load a virtual machine in opennebula,Open sunstone by usin URL http://localhost:9869/ ,Dash board -> Instance-> VMs ,Run the Following command in the virtual machine terminal, psudo apt-get update ,psudo apt-get install gcc g++ ,Type the C program using gedit,Compile and Run the C Program"],
+         "context": [""]
+        },
+        {"tag": "Managing virtual machine",
+         "patterns": ["How to do Managing virtual machine and migration","Tell me the steps for Managing virtual machine and migration?"],
+         "responses": [""],
+         "context": [""]
+        },
+        {"tag": "Word Count ,mapping ,reducer",
+         "patterns": ["How to do Word count?,How to do Word mapping?","Hoe to do Word reducer using hadoop?","Tell me the steps Word count?","Tell me the steps Word mapping?","Tell me the steps for word reducer using Hadoop?"],
+         "responses": ["Open Ubudu Operating System using VMWare, Create a text file testing.txt in a separate directory, Type the program in the lab manual to get the required output"],
+         "context": [""]
+        },
+        {"tag": "Apache Axis development",
+         "patterns": ["How to doUsing Apache Axis develop a Grid Service?","Tell me the steps forUsing Apache Axis develop a Grid Service?"],
+         "responses": ["1. Creating the New Level in the Package,2. Edit the Configuration File,3. Modify the Service Cod,4. Modify the Clien,5. Compile and Deploy,6. Starting the Containe,7. Compile the Clien,8. Run the Client"],
+         "context": [""]
+        },
+        {"tag": "Developing applications",
+         "patterns": ["How to doDevelop applications using Java or C/C++ Grid APIs","Tell me the steps for Developing applications using Java or C/C++ Grid APIs?"],
+         "responses": ["1. Import all the necessary java packages and name the file as GridLayoutDemo.java, 2. Set up components to preferred size , 3. Add buttons to experiment with Grid Layout , 4. Add controls to set up horizontal and vertical gaps , 5. Process the Apply gaps button press , 6. Create the GUI , 7. Create and set up the window, Set up the content pane and Display the window , 8. Schedule a job for the event dispatch thread , 9. Show the application's GUI"],
+         "context": [""]
+        }, 
+        {"tag": "Web Service for Calculator",
+         "patterns": ["How to Develop a new Web Service for Calculator?","Tell me the steps for Develop a new Web Service for Calculator?"],
+         "responses": ["Create new project,Select ASP.NET Empty Web Application,Give a name to your project and click ok button,Go to Solution Explorer and right click at your project,Select Add New Item and select Web Service application,Give it name and click ok button"],
+         "context": [""]
+        }, 
+        {"tag": "Stack uploading",
+         "patterns": ["How to do stack uploading using grid services ,Tell me the steps for stack uploading using grid services"],
+         "responses": ["Building the Service ,Type -->ant generate.service,deploy the --> Axis2_HOME/samples/quickstart/build/StockQuoteService.aar,Create --> ant generate.wsdl from quickstart directory,- From your browser, If you point to the following URL: http://localhost:8080/axis2/services/StockQuoteService/getPrice?symbol=IBM ,You will get the following response: <ns:getPriceResponse><ns:return>42.0</ns:return></ns:getPriceResponse>  .If you invoke the update method like so: http://localhost:8080/axis2/services/StockQuoteService/update?symbol=IBM&price=100  And then execute the first getPriceurl. You can see that the price got updated. "],
+         "context": [""]
+        }, 
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+         "responses": ["I can guide you through Creating and managing virtual machine,Creating Image using Upload option,Creating VM Template,Creating Virtual Machine Instance,Checking Number of Virtual Machines at a Time,Managing virtual machine,Word Count ,mapping ,reducer,Apache Axis development,Developing applications,Web Service for Calculator,Stack uploading"],
+         "context": [""]
+        }
+   ]
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,291 @@
+{"intents": [
+        {"tag": "Starting MATLAB",
+         "patterns": ["How to Start MATLAB?","steps for Starting MATLAB?","Process for starting MATLAB?"],
+         "responses": ["To start MATLAB, double-click the MATLAB shortcut icon on your Windows desktop. You will know MALTAB is running 		when you see the special " >> " prompt in the MATLAB Command Window. "],
+         "context": [""]
+	{"tag": "Quiting MATLAB",
+         "patterns": ["How to quit MATLAB?","steps for quiting MATLAB?","Process for quiting MATLAB?","How to end MATLAB?","steps for 	ending MATLAB?","Process for ending MATLAB?"],
+         "responses": ["To end your MATLAB session, select Exit MATLAB from the File menu in the desktop, or type quit (or exit) in the 	Command Window, or with easy way by click on close button in control box. "],
+         "context": [""]
+        },
+        {"tag": "Desktop Tools-Command Window",
+         "patterns": ["For what0 Command window is used?","Command prompt is used for?","why cmd prompt s used?"],
+         "responses": ["Command Window is used to enter variables and run functions and M-files."],
+         "context": [""]
+        },
+        {"tag": "Desktop Tools-Command History",
+         "patterns": ["Why Command History is used?","For what purpose Command history is used?","Purpose Of command history?"],
+         "responses": ["Statements you enter in the Command Window are logged in the Command History. In the Command History, you can view 	previously run statements, and copy and execute selected statements. "],
+         "context": [""]
+        },
+	{"tag": "Current Directory Browser",
+         "patterns": ["what is Current Directory Browser","Define Current Directory Browser?","Explain about Current Directory Browser?"]
+         "responses": ["MATLAB file operations use the current directory reference point. Any file you want to run must be in the current 	directory or on the search path."],
+         "context": [""]
+        },
+	{"tag": "MATLAB Workspace",
+         "patterns": ["what is MATLAB Workspace","Define MATLAB Workspace?","short note on MATLAB Workspace?"],
+         "responses": ["The MATLAB workspace consists of the set of variables (named arrays) built up during a MATLAB session and stored 	in memory."],
+         "context": [""]
+        },
+	{"tag": "Clear Commands",
+         "patterns": ["What is clear Command?","Define clear Command?","Say about clear Command?"],
+         "responses": ["Removes all variables from workspace"],
+         "context": [""]
+        },
+        {"tag": "Clc Command",
+         "patterns": ["What is clc Command?","Define clc Command?","Say about clc Command?"],
+         "responses": ["Clears the Command window and homes the cursor."],
+         "context": [""]
+        },
+	{"tag": "help Command",
+         "patterns": ["What is the help Command?","Define help Command?","Say about help Command?"],
+         "responses": ["help <Topic> displays help about that Topic if it exist."],
+         "context": [""]
+        },
+	{"tag": "lookfor Command",
+         "patterns": ["What is lookfor Command?","Define lookfor Command?","Say about lookfor Command?"],
+         "responses": ["Provides help by searching through all the first lines of MATLAB help topics and returning those that contains a 		key word you specify. "],
+         "context": [""]
+        },
+	{"tag": "edit Command",
+         "patterns": ["What is the edit Command?","Define edit Command?","Say about edit Command?"],
+         "responses": ["enable you to edit (open) any M-file in Editor Window. This command doesn’t open built-in function like, sqrt. See 	also type Command "],
+         "context": [""]
+        },
+	{"tag": "more command",
+         "patterns": ["What is more command?","Define more command?","Say about more command?"],
+         "responses": ["more on enables paging of the output in the MATLAB command window, and more off disables paging of the output in 	the MATLAB command window."],
+         "context": [""]
+        },
+	{"tag": "A semicolon ",
+         "patterns": ["Why semicolon is used?","Where  semicolon is used?"],
+         "responses": ["at the end of a MATLAB statement suppresses printing of results.If a statement does not fit on one line, use " . . 	. ", followed by Enter to indicate that the statement continues on the next line. "],
+         "context": [""]
+        },
+	{"tag": "Up arrow and Down arrow ",
+         "patterns": ["Why Up arrow and Down arrow  is used?","Where  Up arrow and Down arrow  is used?"],
+         "responses": ["Use Up arrow and Down arrow to edit previous commands you entered in Command Window. "],
+         "context": [""]
+        },
+	{"tag": "Entering Matrix",
+         "patterns": ["How to Enter a matrix?","How will a matrix look?"],
+         "responses": ["The best way for you to get started with MATLAB is to learn how to handle matrices.
+	You only have to follow a few basic conventions:1.Separate the elements of a row with blanks or commas.2.Use a semicolon ( ; ) to 		indicate the end of each row.3. Surround the entire list of elements with square brackets, [ ].
+	For Example
+	>> A =	 [16 3 2 13; 5 10 11 8; 9 6 7 12; 4 15 14 1]
+	MATLAB displays the matrix you just entered.
+	A =
+	16 3 2 13
+	5 10 11 8
+	9 6 7 12
+	4 15 14 1
+	Once you have entered the matrix, it is automatically remembered in the MATLAB workspace. You can refer to it simply as A. Also you 	can enter and change the values of matrix elements by using workspace window."],
+         "context": [""]
+        },
+	{"tag": "Subscripts",
+         "patterns": ["how to identify a Subscripts?","Steps to find the Subscripts of a matrix?"],
+         "responses": ["The element in row i and column j of A is denoted by A(i,j). For example, A(4,2)is the number in the fourth row and 	second column. "],
+         "context": [""]
+        },
+	{"tag": "Colon Operator",
+         "patterns": ["What is Colon Operator?","Define Colon Operator?","Say about Colon Operator?","What is the use of Colon 		Operator?","How to use colon operation?","What is : operator?"],
+         "responses": ["The colon " : " is one of the most important MATLAB operators. It occurs in several different forms. The expression
+	>> 1:10 is a row vector containing the integers from 1 to 10
+	1 2 3 4 5 6 7 8 9 10 .To obtain nonunit spacing, specify an increment. For example,>> 100:-7:50 100 93 86 79 72 65 58 51 Subscript 		expressions involving colons refer to portions of a matrix. >>A(1:k,j) is the first k elements of the jth column of A "],
+         "context": [""]
+        },
+	{"tag": "Expressions-Variable",
+         "patterns": ["What is Variable?","Define Variable?","Say about Variable?","Short note about Variable?","How variables are used?"],
+         "responses": ["MATLAB does not require any type declarations or dimension statements. When MATLAB encounters a new variable name, 	it automatically creates the variable and allocates the appropriate amount of storage. If the variable already exists, MATLAB 	changes its contents and, if necessary, allocates new storage. For example, num_students = 25 creates a 1-by-1 matrix named 	num_students and stores the value 25 in its single element. Variable names consist of a letter, followed by any number of letters, 	digits, or underscores. MATLAB uses only the first 31 characters of a variable name. MATLAB iscase sensitive; it distinguishes 	between uppercase and lowercase letters. A and a are not the same variable. "],
+         "context": [""]
+        },
+	{"tag": "Numbers ",
+         "patterns": ["What are Numbers ?","Define Numbers ?","Say about Numbers ?"],
+         "responses": ["MATLAB uses conventional decimal notation, with an optional decimal point and leading plus or minus sign, for 	numbers. Scientific notation uses the letter ( e ) to specify a power-of-ten scale factor. Imaginary numbers use either i or j as a 	suffix. Some examples of legal numbers are 3 -99 0.0001 9.6397238 1.60210e-20 6.02252e23 1i 3+5j "],
+         "context": [""]
+        },
+	{"tag": "Function",
+         "patterns": ["What is Function?","Define Function?","Say about Function?"],
+         "responses": ["MATLAB provides a large number of standard elementary mathematical functions, including abs, sqrt, exp, and sin. 	Taking the square root or logarithm of a negative number is not an error; the appropriate complex result is produced automatically. 	MATLAB also provides many more advanced mathematical functions, including Bessel and gamma functions. Most of these functions	 accept complex arguments."],
+         "context": [""]
+        },
+	{"tag": "Relational and Logical Operations",
+         "patterns": ["What are Relational and Logical Operations?","Define about Relational and Logical Operations?","Say about Relational and Logical Operations?"],
+         "responses": ["These operations and functions provide answers to True-False questions. One important use of this capability is to control the flow or order of execution of a series of MATLAB commands (usually in an M-file ) based on the results of true/false questions. As inputs to all relational and logical expressions, MATLAB considers ny nonzero number to be true, and zero to be False. The output of all relational and logical expressions produces one for True and zero for False, and the array is flagged as logical. That is, the
+result contains numerical values 1 and 0 that can be used in mathematical statement, but also allow logical array addressing.
+"],
+         "context": [""]
+        },
+	{"tag": "Plotting Function",
+         "patterns": ["What is Plotting Function?","Define Plotting Function?","Say about Plotting Function?"],
+         "responses": ["MATLAB has extensive facilities for displaying vectors and matrices as graphs, as well as annotating and printing these graphs."],
+         "context": [""]
+        },
+	{"tag": "Complex Numbers",
+         "patterns": ["What is Complex Numbers?","Define Complex Numbers?","Say about Complex Numbers?"],
+         "responses": ["It is very easy to handle complex numbers in MATLAB. The special values i and j stand for √−1. Try sqrt(–1) to see how MATLAB represents complex numbers."],
+         "context": [""]
+        },
+	{"tag": "Characters and Text",
+         "patterns": ["What is Characters ?","Define Characters ?","Say about Characters ?","What is  Text?","Define about  Text?"],
+         "responses": ["Enter text into MATLAB using single quotes. For example, >> S = Hello.The result is not the same kind of numeric matrix or array we have been dealing with up to now. The string is actually a vector whose components are the numeric codes for the characters (the first 127 codes in ASCII). The length of S is the number of characters. It is a 1-by-5 character array. A quote within the string is indicated by two quotes. Concatenation with square brackets joins text variables together into larger strings. For example, >> h = ['MAT', 'LAB'] joins the strings horizontally and produces h = MATLAB and the statement >> v = ['MAT'; 'LAB'] joins the strings vertically and produces v = MATLAB Note that both words in v have to have the same length. The resulting arrays are both character arrays; h is 1-by-6 and v is 2-by-3."],
+         "context": [""]
+        },
+	{"tag": "help Command",
+         "patterns": ["What is Script Files?","Define Script Files?","Say about Script Files?"],
+         "responses": ["You need to save the program if you want to use it again later. To save the
+contents of the Editor, select File → Save from the Editor menu bar. Under Save file as, select a directory and enter a filename, which must have the extension .m, in the File name: box (e.g., faez.m). Click Save. The Editor window now has the title faez.m If you make subsequent changes to faez.m an asterisk appears next to its name at the top of the Editor until you save the changes. A MATLAB program saved from the Editor with the extension .m is called a script file, or simply a script. (MATLAB function files also have the extension .m. We therefore refer to both script and function files generally as M-files.). The special significances of a script file are that:-
+1- if you enter its name at the command-line prompt, MATLAB carries out each statement in it as if it were entered at the prompt.
+2- Scripts M-file does not accept input arguments or return output arguments.
+They operate on data in the workspace.
+3- The rules for script file names are the same as those for MATLAB variable
+names."],
+         "context": [""]
+        },
+	{"tag": "Function Files",
+         "patterns": ["What is Function Files?","Define Function Files?","Say about Function Files?"],
+         "responses": ["MATLAB enables you to create your own function M-files. A function M-file is similar to a script file in that it also has an .m extension. However, it differs from a script file in that it communicates with the MATLAB workspace only through specially designated input and output arguments. * Functions operate on variables within their own workspace, separate from the workspace you access at the MATLAB command prompt."],
+         "context": [""]
+        },
+	{"tag": "if statement",
+         "patterns": ["What is if statement?","Define if statement?","explain about if statement?","Syntax for if statement?"],
+         "responses": ["The if statement evaluates a logical expression and executes a group of statements when the expression is true. The optional elseif and else keywords provide for the execution of alternate groups of statements. An end keyword, which matches the if, terminates the last group of statements.It is important to understand how relational operators and if statements work with matrices. When you want to check for equality between two variables, you might use if A = = B."],
+         "context": [""]
+        },
+	{"tag": "switch and case statement",
+         "patterns": ["What is switch and case statement?","Define switch and case statement?","Explain about switch and case statement?"],
+         "responses": ["The switch statement executes groups of statements based on the value of a variable or expression. The keywords case and otherwise delineate the groups. Only the first matching case is executed. There must always be an end to match the switch. If the first case statement is true, the other case statements do not execute."],
+         "context": [""]
+        },
+	{"tag": "for statement",
+         "patterns": ["What is for statement?","short note on for statement?","Explain about for statement?"],
+         "responses": ["The for loop repeats a group of statements a fixed, predetermined number of times. The general form of for statement is:
+for variable = initial value: step size: final value
+statement . . . statement End "],
+         "context": [""]
+        },
+	{"tag": "while statement",
+         "patterns": ["What is while statement?","Define while statement?","Say about while statement?"],
+         "responses": ["repeat statements an indefinite number of times under control of a logical condition. A matching end delineates the statements.
+The general form of while statement is: while expressio statement ... statement End "],
+         "context": [""]
+        },
+	{"tag": "break",
+         "patterns": ["What is break?","Explain about break","Define break?","Say about break?"],
+         "responses": ["Terminate execution of while or for loop. In nested loops, break exits from the
+innermost loop only. If break is executed in an IF, SWITCH-CASE statement, it terminates the statement at that point.
+ "],
+         "context": [""]
+        },
+	{"tag": "Continue",
+         "patterns": ["What is Continue?","Define Continue?","Say about Continue?"],
+         "responses": ["passes control to the next iteration of FOR or WHILE loop in which it appears, skipping any remaining statements in the body of the FOR or WHILE loop."],
+         "context": [""]
+        },
+        {"tag": "MATLAB Simulink Basic",
+         "patterns": ["What is MATLAB Simulink Basic?","Define MATLAB Simulink Basic?","Say about MATLAB Simulink Basic?","Write a short note on MATLAB Simulink Basic?"],
+         "responses": ["Simulink is a graphical extension to MATLAB for the modeling and simulation of systems. In Simulink, systems are drawn on screen as block diagrams. Many elements of block diagrams are available (such as transfer functions, summing junctions, etc.), as well as virtual input devices (such as function generators) and output devices (such as oscilloscopes). Simulink is integrated with MATLAB and data can be easily transferred between the programs. In this tutorial, we will introduce the basics of using Simulink to model and simulate a system.
+Simulink is supported on Unix, Macintosh, and Windows environments, and it is included in the student version of MATLAB for personal computers. For more information on Simulink, contact the MathWorks.
+The idea behind these tutorials is that you can view them in one window while running Simulink in another window. Do not confuse the windows, icons, and menus in the tutorials for your actual Simulink windows. Most images in these tutorials are not live - they simply display what you should see in your own Simulink windows. All Simulink operations should be done in your Simulink windows.
+"],
+         "context": [""]
+        },
+        {"tag": "Starting Simulink",
+         "patterns": ["What is Starting Simulink?","Define Starting Simulink?","Say about Starting Simulink?"],
+         "responses": ["Simulink is started from the MATLAB command prompt by entering the following
+command:simulink Alternatively, you can click on the "Simulink Library Browser" button at the top of the MATLAB command window as shown below: The Simulink Library Browser window should now appear on the screen. Most of the blocks needed for modeling basic systems can be found in the subfolders of the main "Simulink" folder (opened by clicking on the "+" in front of "Simulink"). "],
+         "context": [""]
+        },
+        {"tag": "Blocks",
+         "patterns": ["What are Blocks in Simulink?","Define Blocks?","Say about Blocks in Simulink?"],
+         "responses": ["The subfolders underneath the "Simulink" folder indicate the general classes of blocks available for
+us to use:
+•Continuous: Linear, continuous-time system elements (integrators, transfer functions, state -
+space models, etc.)
+•Discrete: Linear, discrete-time system elements (integrators, transfer functions, state - space
+models, etc.)
+•Functions & Tables: User-defined functions and tables for interpolating function values
+•Math: Mathematical operators (sum, gain, dot product, etc.)
+•Nonlinear: Nonlinear operators (coulomb/viscous friction, switches, relays, etc.)
+•Signals & Systems: Blocks for controlling/monitoring signal(s) and for creating subsystems
+•Sinks: Used to output or display signals (displays, scopes, graphs, etc.)
+•Sources: Used to generate various signals (step, ramp, sinusoidal, etc.)
+Blocks have zero to several input terminals and zero to several output terminals. Unused input
+terminals are indicated by a small open triangle. Unused output terminals are indicated by a small
+triangular point. The block shown below has an unused input terminal on the left and an unused
+output terminal on the right.
+"],
+         "context": [""]
+        },
+        {"tag": "Lines",
+         "patterns": ["What are Lines?","Define Lines?","Say about Lines?"],
+         "responses": ["Lines transmit signals in the direction indicated by the arrow. Lines must always transmit signals from the output terminal of one block to the input terminal of another block. One exception to this is that a line can tap off of another line. This sends the original signal to each of two (or more) destination blocks, as shown below:
+Lines can never inject a signal into another line; lines must be combined through the use of a block such as a summing junction.
+A signal can be either a scalar signal or a vector signal. For Single-Input, Single-Output systems scalar signals are generally used. For Multi-Input, Multi-Output systems, vector signals are often used, consisting of two or more scalar signals. The lines used to transmit scalar and vector signals are identical. The type of signal carried by a line is determined by the blocks on either end of the line.
+"],
+         "context": [""]
+        },
+	{"tag": "Building a System",
+         "patterns": ["how to Build a System?","Steps in Building a System?"],
+         "responses": ["To demonstrate how a system is represented using Simulink, we will build the block diagram for a simple model consisting of a sinusoidal input multiplied by a constant gain, which is shown below:
+This model will consist of three blocks: Sine Wave, Gain, and Scope. The Sine Wave is a Source Block from which a sinusoidal input signal originates. This signal is transferred through a line in the direction indicated by the arrow to the Gain Math Block. The Gain block modifies its input signal (multiplies it by a constant value) and outputs a new signal through a line to the Scope block. The Scope is a Sink Block used to display a signal (much like an oscilloscope). We begin building our system by bringing up a new model window in which to create the blockLet us assume that our system's sinusoidal input has:
+Amplitude = 2 Frequency = pi  Phase = pi/2
+Enter these values into the appropriate fields (leave the "Sample time" set to 0) and click "OK" to accept them and exit the window. Note that the frequency and phase for our system contain 'pi' (3.1415...). These values can be entered into Simulink just as they have been shown.
+Next, we modify the Gain block by double-clicking on it in the model window. The following window will then appear:
+Note that Simulink gives a brief explanation of the block's function in the top portion of this window  In the case of the Gain block, the signal input to the block (u) is multiplied by a constant (k) to create the block's output signal (y). Changing the "Gain" parameter in this window changes the value of k.
+For our system, we will let k = 5. Enter this value in the "Gain" field, and click "OK" to close the window.
+The Scope block simply plots its input signal as a function of time, and thus there are no system parameters that we can change  "],
+         "context": [""]
+        },
+	{"tag": "Connecting the Blocks",
+         "patterns": ["how to Connect the Blocks?","Steps for Connecting the Blocks?"],
+         "responses": ["For a block diagram to accurately reflect the system we are modeling, the Simulink blocks must be properly connected. In our example system, the signal output by the Sine Wave block is transmitted to the Gain block. The Gain block amplifies this signal and outputs its new value to the Scope block, which graphs the signal as a function of time. Thus, we need to draw lines from the output of the Sine Wave block to the input of the Gain block, and from the output of the Gain block to the input of the Scope block. Lines are drawn by dragging the mouse from where a signal starts (output terminal of a black) to where it ends (input terminal of another block). When drawing lines, it is important to make sure that the signal reaches each of its intended terminals. Simulink will turn the mouse pointer into a
+crosshair when it is close enough to an output terminal to begin drawing a line, and the pointer will change into a double crosshair when it is close enough to snap to an input terminal. A signal is The same method can be used to place the Gain and Scope blocks in the model window. The "Gain" block can be found in the "Math" subfolder and the "Scope" block is located in the "Sink" subfolder. Arrange the three blocks in the workspace (done by selecting and dragging an individual block to a new location).
+"],
+         "context": [""]
+        },
+	{"tag": "Modifying the Blocks",
+         "patterns": ["how to Modify the Blocks?","Steps for Modifying the Blocks?"],
+         "responses": ["Simulink allows us to modify the blocks in our model so that they accurately reflect the
+characteristics of the system we are analyzing. For example, we can modify the Sine Wave block by double-clicking on it. Doing so will cause the following window to appear:
+This window allows us to adjust the amplitude, frequency, and phase shift of the sinusoidal input. The "Sample time" value indicates the time interval between successive readings of the signal. Setting this value to 0 indicates the signal is sampled continuously.
+diagram. This is done by clicking on the "New Model" button in the toolbar of the Simulink Library Browser (looks like a blank page). Building the system model is then accomplished through a series of steps:
+1. The necessary blocks are gathered from the Library Browser and placed in the model window.
+2. The parameters of the blocks are then modified to correspond with the system we are modelling.
+3. Finally, the blocks are connected with lines to complete the model.
+Each of these steps will be explained in detail using our example system. Once a system is built, simulations are run to analyze its behavior.
+"],
+         "context": [""]
+        },
+	{"tag": "Gathering Blocks",
+         "patterns": ["how to Gathera  Blocks?","Steps for Gathering Blocks?"],
+         "responses": ["Each of the blocks we will use in our example model will be taken from the Simulink Library
+Browser. To place the Sine Wave block into the model window, follow these steps:
+1. Click on the "+" in front of "Sources" (this is a subfolder beneath the "Simulink" folder) to display the various source blocks available for us to use.
+2. Scroll down until you see the "Sine Wave" block. Clicking on this will display a short
+explanation of what that block does in the space below the folder list:
+3. To insert a Sine Wave block into your model window, click on it in the Library Browser and drag the block into your workspace. properly connected if its arrowhead is filled in. If the arrowhead is open, it means the signal is not connected to both blocks. To fix an open signal, you can treat the open arrowhead as an output terminal and continue drawing the line to an input terminal in the same manner as explained before. Properly Connected Signal Open Signal.
+"],
+         "context": [""]
+        },
+	{"tag": "Running Simulations",
+         "patterns": ["How to Run Simulations?","steps for Running Simulations?","Process for Running Simulations?"],
+         "responses": ["Now that our model has been constructed, we are ready to simulate the system. To do this, go to the Simulation menu and click on Start , or just click on the "Start/Pause Simulation" button in the model window toolbar (looks like the "Play" button on a VCR). Because our example is a relatively simple model, its simulation runs almost instantaneously. With more complicated systems, however,you will be able to see the progress of the simulation by observing its running time in the the lower box of the model window. Double-click the Scope block to view the output of the Gain block for the simulation as a function of time. Once the Scope window appears, click the "Autoscale" button in its
+toolbar (looks like a pair of binoculars) to scale the graph to better fit the window. Having done this,you should see the following:
+Note that the output of our system appears as a cosine curve with a period of 2 seconds and
+amplitude equal to 10. Does this result agree with the system parameters we set? Its amplitude makes sense when we consider that the amplitude of the input signal was 2 and the constant gain of the system was 5 (2 x 5 = 10). The output's period should be the same as that of the input signal, and this value is a function of the frequency we entered for the Sine Wave block (which was set equal to pi). Finally, the output's shape as a cosine curve is due to the phase value of pi/2 we set for the input (sine and cosine graphs differ by a phase shift of pi/2)."],
+         "context": [""]
+        },
+   ]
+}
+
+
+
+
+
+
+
+
+
+

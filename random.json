@@ -1,0 +1,59 @@
+{"intents": [
+        {"tag": "starting matlab",
+         "patterns": ["How to Start MATLAB?","steps for Starting MATLAB?","Process for starting MATLAB?"],
+         "responses": ["To start MATLAB, double-click the MATLAB shortcut icon on your Windows desktop. You will know MALTAB is running 		when you see the special prompt in the MATLAB Command Window."],
+         "context": [""]
+         },
+    	{"tag": "quiting MATLAB",
+         "patterns": ["How to quit MATLAB?","steps for quiting MATLAB?","Process for quiting MATLAB?","How to end MATLAB?","steps for ending MATLAB?","Process for ending MATLAB?"],
+         "responses": ["To end your MATLAB session, select Exit MATLAB from the File menu in the desktop, or type quit (or exit) in the Command Window, or with easy way by click on close button in control box."],
+         "context": [""]
+        },
+        {"tag": "desktop Tools-Command Window",
+         "patterns": ["For what0 Command window is used?","Command prompt is used for?","why cmd prompts used?"],
+         "responses": ["Command Window is used to enter variables and run functions and M-files."],
+         "context": [""]
+        },
+        {"tag": "desktop Tools-Command History",
+         "patterns": ["Why Command History is used?","For what purpose Command history is used?","Purpose Of command history?"],
+         "responses": ["Statements you enter in the Command Window are logged in the Command History. In the Command History, you can view 	previously run statements, and copy and execute selected statements."],
+         "context": [""]
+        },
+    	{"tag": "current Directory Browser",
+         "patterns": ["what is Current Directory Browser","Define Current Directory Browser?","Explain about Current Directory Browser?"],
+         "responses": ["MATLAB file operations use the current directory reference point. Any file you want to run must be in the current directory or on the search path."],
+         "context": [""]
+        },
+    	{"tag": "mATLAB Workspace",
+         "patterns": ["what is MATLAB Workspace","Define MATLAB Workspace?","short note on MATLAB Workspace?"],
+         "responses": ["The MATLAB workspace consists of the set of variables (named arrays) built up during a MATLAB session and stored in memory."],
+         "context": [""]
+        },
+    	{"tag": "clear Commands",
+         "patterns": ["What is clear Command?","Define clear Command?","Say about clear Command?"],
+         "responses": ["Removes all variables from workspace"],
+         "context": [""]
+        },
+        {"tag": "clc Command",
+         "patterns": ["What is clc Command?","Define clc Command?","Say about clc Command?"],
+         "responses": ["Clears the Command window and homes the cursor."],
+         "context": [""]
+        },
+    	{"tag": "help Command",
+         "patterns": ["What is the help Command?","Define help Command?","Say about help Command?"],
+         "responses": ["help <Topic> displays help about that Topic if it exist."],
+         "context": [""]
+        },
+    	
+   ]
+}
+
+
+
+
+
+
+
+
+
+
